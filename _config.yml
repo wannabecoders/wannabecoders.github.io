@@ -3,3 +3,4 @@ title: Wannabe Coders
 description: "A community of the wannabes, by the wannabes, for the wannabes."
 theme: jekyll-theme-hacker
 url: https://wannabecoders.github.io/
+show_github: true

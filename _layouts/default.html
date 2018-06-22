@@ -38,6 +38,20 @@
       </section>
     </div>
 
+    <!-- translate datetimes -->
+    <script type="text/javascript">
+    function to_local_time (date_str) {
+      return new Date(Date.parse(date_str))
+        .toLocaleString("en-US",
+            {timeZoneName: "long"});
+    }
+    var elems = document.getElementsByClassName("dt");
+    for (var i = 0; i < elems.length; i++) {
+      var elem = elems[i];
+      elem.innerHTML = to_local_time(elem.innerHTML);
+    }
+    </script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64560991-2"></script>
     <script>
